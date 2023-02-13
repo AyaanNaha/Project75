@@ -1,16 +1,17 @@
-import firebase from "firebase";
-require("@firebase/firestore");
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
-var firebaseConfig = {
-  apiKey: "AIzaSyCZrG0BF6LrnRpWZjsPQxNGyMCLByo8HrM",
-  authDomain: "e-ride-549e4.firebaseapp.com",
-  projectId: "e-ride-549e4",
-  storageBucket: "e-ride-549e4.appspot.com",
-  messagingSenderId: "588298110700",
-  appId: "1:588298110700:web:34e3df331c6b1fc95047c9",
-  measurementId: "G-G3K7BWL5LH"
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyBKJkTzJPh-T_79XLGWdxagAeQR2nNpsZQ",
+  authDomain: "e-ride-a53ea.firebaseapp.com",
+  projectId: "e-ride-a53ea",
+  storageBucket: "e-ride-a53ea.appspot.com",
+  messagingSenderId: "808284902790",
+  appId: "1:808284902790:web:41c60dc4d5d94739044807"
 };
 
-firebase.initializeApp(firebaseConfig);
-
-export default firebase.firestore();
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
